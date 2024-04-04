@@ -16,6 +16,11 @@ We utilized an example provided by the Internet Computer community to create a c
 
 Thus far, we have obtained the canister address to which ICP tokens are sent. Subsequently, we need to convert these tokens into cycles, the currency the smart contract utilizes to maintain its operation.
 
+### Interesting Bits in ICP
+**Ledger canister** - A core component of the ICP ecosystem is the ledger canister. This canister acts as a single source of truth for all account balances and transaction history related to ICP tokens. It functions similarly to a smart contract for token management on other blockchain platforms. During local development, developers can deploy a replica of the ledger canister on their local machine. This allows for testing and experimentation with canister interactions in a controlled environment before deploying to the mainnet.
+
+**Cycles as Gas Fee** - ICP uses cycles as the unit of computation. Unlike gas fees in other blockchains, cycles are a refundable resource. This can be advantageous for developers as unused cycles are returned, promoting efficient canister design.
+
 ## Issues
 
 The primary obstacle encountered was determining how to trigger the canister's functionality upon receiving token transfers. Unlike traditional smart contract platforms like Ethereum, where token transfers often automatically execute code, ICP requires further exploration into mechanisms like outside canister calls or asynchronous calls to achieve the desired behavior.
