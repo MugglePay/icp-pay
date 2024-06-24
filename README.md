@@ -18,8 +18,8 @@ Chain-key Bitcoin (ckBTC) is a token on the Internet Computer that is backed 1:1
 ### Generic ICRC-1 token (e.g. ckUSDx)
 
 ## Supported Wallets
-(Coming soon)
 Get started and pay with wallets that support ICP. This is a list of wallets that can be easily used to make payment on ICP. 
+- [PlugWallet](https://plugwallet.ooo/) Browser Extension
 
 ## E-Commerce Integrations
 (Coming soon)
