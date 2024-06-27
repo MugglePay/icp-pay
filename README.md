@@ -6,7 +6,7 @@ ICP Pay represents a standardized protocol with a suite of reference implementat
 The ICP blockchain delivers transactions with sub-second confirmation and at a minimal cost of under $0.002, ensuring a smooth user experience devoid of middlemen.
 
 ## Supported Tokens
-(Coming soon)
+
 
 ### ICP
 The Internet Computer Protocol (ICP) token is the native utility token of the Internet Computer blockchain network. 
