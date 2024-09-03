@@ -1,4 +1,6 @@
-# ICP Pay (In Progress)
+# ICP Pay (Powered by MugglePay)
+
+## Introduction
 
 ICP Pay represents a standardized protocol with a suite of reference implementations, designed to empower developers to seamlessly integrate decentralized ICP payment systems into their applications and services.
 
@@ -6,7 +8,6 @@ ICP Pay represents a standardized protocol with a suite of reference implementat
 The ICP blockchain delivers transactions with sub-second confirmation and at a minimal cost of under $0.002, ensuring a smooth user experience devoid of middlemen.
 
 ## Supported Tokens
-
 
 ### ICP
 The Internet Computer Protocol (ICP) token is the native utility token of the Internet Computer blockchain network. 
@@ -22,8 +23,18 @@ Get started and pay with wallets that support ICP. This is a list of wallets tha
 - [PlugWallet](https://plugwallet.ooo/)
 
 ## E-Commerce Integrations
-(Coming soon)
+
 In order to maximize the number of merchants utilizing ICP for payment acceptance, it's crucial to simplify the integration of ICP Pay across various eCommerce platforms.
 
-## How to use ICP Pay
+### Shopify
+
+Integrate ICP payments to your Shopify website: [Shopify](https://mugglepay.notion.site/Shopify-Integration-with-MugglePay-d42bae4755af464ba58d146c686f3bf0)
+
+### WordPress / WooCommerce
+
+Integrate ICP payments to your Wordpress Website: [WordPress](https://wordpress.org/plugins/mugglepay/)
+
+
+
+## Example
 (Coming soon)
