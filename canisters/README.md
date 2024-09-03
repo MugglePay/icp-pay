@@ -1,29 +1,38 @@
+# ICP Payment
 
+ICP payment system that allows users to make payments using ICP/ICRC tokens and autoswap to ckUSDC token. The system is built on the Internet Computer and uses the _**Rust**_ programming language.
 
-for the split payments
+## Features
 
-- monitor the balance of the backend canister periodically. if the balance increases, fetch the latest transaction that caused the balance to increase
-the transaction contains the sender and the amount.
+- **Payment**: Users can make payments using ICP/ICRC tokens.
+- **Autoswap**: The system automatically swaps ICP/ICRC tokens to ckUSDC tokens.
 
-return 99% of the received funds back to the sender.
-get all the addresses that need to shared the 1% and send the respective percentages to these addresses.
+## Deployment
 
--- for the recurring payments, let the user depsit money into the account controlled by the backend canister so that whenever the month ends, the canister can automatically deduct the amount.
+#### Deploying the ICP Payment Backend
 
-for tests ??????
+1. Build the project:
 
+```bash
+cargo build --release --target wasm32-unknown-unknown --package icp_payment_backend
+```
 
-ICP ledger canister local - bd3sg-teaaa-aaaaa-qaaba-cai      ryjl3-tyaaa-aaaaa-aaaba-cai
-ckETH ledger canister local - bkyz2-fmaaa-aaaaa-qaaaq-cai   ss2fx-dyaaa-aaaar-qacoq-cai
-ckBTC ledger canister local - be2us-64aaa-aaaaa-qaabq-cai   mxzaz-hqaaa-aaaar-qaada-cai
+2. Extract the Candid interface:
 
+```bash
+cargo install candid-extractor
 
+candid-extractor target/wasm32-unknown-unknown/release/icp_payment_backend.wasm > src/icp_payment_backend/icp_payment_backend.did
+```
 
-dfx canister --network local call ckETH_ledger icrc1_transfer '
-  (record {
-    to=(record {
-      owner=(principal "bw4dl-smaaa-aaaaa-qaacq-cai")
-    });
-    amount=10_000_000
-  })
-'
+3. Scripts:
+
+- `deploy_ledger.sh`: Deploys the ledger canister.
+- `deploy_canister.sh`: Deploys the ICP payment backend canister.
+
+4. Deploy the ICP payment backend:
+
+```bash
+# Internet Computer deployment
+dfx deploy icp_payment_backend --network ic
+```

@@ -1,0 +1,46 @@
+type AddOwnerArgs = record { owner : principal };
+type AddSwapArgs = record {
+  token0 : principal;
+  token1 : principal;
+  pool_canister : principal;
+};
+type Error = variant {
+  OwnerAlreadyExists;
+  InsufficientAllowance : record { allowance : nat };
+  SwapAlreadyExists;
+  InsufficientBalance : record { balance : nat };
+  InvalidPrincipal;
+  IcCdkError : record { message : text };
+  OwnerNotFound;
+  SwapNotFound;
+  SwapTokenNotFound;
+  Forbidden;
+  AmountTooSmall;
+};
+type GetErrorLogsArgs = record { start : opt nat64; length : opt nat64 };
+type Log = record { level : LogLevel; message : text; timestamp : nat64 };
+type LogLevel = variant { Error; Info; Debug };
+type PayArgs = record {
+  token : principal;
+  memo : nat64;
+  to_merchant : principal;
+  amount : nat;
+};
+type RemoveSwapArgs = record { token0 : principal; token1 : principal };
+type Result = variant { Ok; Err : Error };
+type WithdrawBalanceArgs = record {
+  to : principal;
+  token : principal;
+  amount : nat;
+};
+service : () -> {
+  add_owner : (AddOwnerArgs) -> (Result);
+  add_swap : (AddSwapArgs) -> (Result);
+  get_logs : (GetErrorLogsArgs) -> (vec Log) query;
+  get_owners : () -> (vec principal) query;
+  get_swaps : () -> (vec record { principal; principal }) query;
+  pay : (PayArgs) -> (Result);
+  remove_owner : (AddOwnerArgs) -> (Result);
+  remove_swap : (RemoveSwapArgs) -> (Result);
+  withdraw_balance : (WithdrawBalanceArgs) -> (Result);
+}
