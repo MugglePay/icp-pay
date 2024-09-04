@@ -5,6 +5,11 @@
 ICP Pay represents a standardized protocol with a suite of reference implementations, designed to empower developers to seamlessly integrate decentralized ICP payment systems into their applications and services.
 
 ## Payment Flow
+Shopify E-commerce Example: How to purchase a T-shirt online with ICP (ICP, ckBTC, ckETH, ckUSDC). 
+
+![202408ICP_10s](https://github.com/user-attachments/assets/17f3e05f-a554-4630-a118-013a0043fbed)
+
+## Tech Architecture Diagram
 [![ICP Payment Flow](https://mermaid.ink/img/pako:eNp9kk1vwjAMhv-KFe3AJLbLTuSANMqmIQ0JAdMuvWSJaSNo0rkuqEL897l8TYiNHJLYsd88cbxVNjpUWlX4XWOwOPQmI1OkAWSUhthbX5rAMKgbpGv3uM6yFU5M88cRks1lczg5WQ_9_jlHwygwUkCGkcPAnhuYYuYrPl11Dm3TjgoaPvHrCd5j5sMhas92KZwQGkYwQa5YR28ROne9x979LVlqa1D9gkMSw8Jnt_inKI_1gg7PzhFW1bX-Hk6DGEUb9y-xTLDxnAt6U3KEziiZdMEuB_OkXV7mbzfhXyNtDDmklprJWIaOjWGNxCBqdvkxGyaioLqqQCqMd_Lr21YxVZxjganSsnWGlqlKw07iTM1x1gSrNFONXUWxznKlF2ZViVWXTip87JezF53nSONDU-17a_cDASjPVQ?type=png)](https://mermaid.live/edit#pako:eNp9kk1vwjAMhv-KFe3AJLbLTuSANMqmIQ0JAdMuvWSJaSNo0rkuqEL897l8TYiNHJLYsd88cbxVNjpUWlX4XWOwOPQmI1OkAWSUhthbX5rAMKgbpGv3uM6yFU5M88cRks1lczg5WQ_9_jlHwygwUkCGkcPAnhuYYuYrPl11Dm3TjgoaPvHrCd5j5sMhas92KZwQGkYwQa5YR28ROne9x979LVlqa1D9gkMSw8Jnt_inKI_1gg7PzhFW1bX-Hk6DGEUb9y-xTLDxnAt6U3KEziiZdMEuB_OkXV7mbzfhXyNtDDmklprJWIaOjWGNxCBqdvkxGyaioLqqQCqMd_Lr21YxVZxjganSsnWGlqlKw07iTM1x1gSrNFONXUWxznKlF2ZViVWXTip87JezF53nSONDU-17a_cDASjPVQ)
 
 ## Stablecoin Conversion for merchants
