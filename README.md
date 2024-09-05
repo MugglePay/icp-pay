@@ -53,3 +53,10 @@ Integrate ICP payments to your Wordpress Website: [WordPress](https://wordpress.
 
 ## Demo
 [Watch this video](https://www.youtube.com/watch?v=BNbLVqCkdK4)
+
+## Links
+Twitter: https://x.com/paymuggle
+Youtube: https://www.youtube.com/watch?v=BNbLVqCkdK4&t=8s
+Register Now: https://merchants.mugglepay.com/
+Github: https://github.com/MugglePay/icp-pay?f=icp
+
