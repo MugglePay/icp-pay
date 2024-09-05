@@ -51,5 +51,5 @@ Integrate ICP payments to your Wordpress Website: [WordPress](https://wordpress.
 
 
 
-## Example
-(Coming soon)
+## Demo
+[Watch this video](https://www.youtube.com/watch?v=BNbLVqCkdK4)
